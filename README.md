@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Firebase Authentication with Next.js
 
-First, run the development server:
+This project demonstrates how to implement authentication in a Next.js application using Firebase. Users can create an account and log in using either their Google account or an email/password combination.
+
+
+
+## Features
+
+- Email/Password Authentication: Users can sign up and log in using their email and password.
+- Live previews
+- Google Authentication: Users can sign up and log in with their Google account.
+- Firebase Integration: Fully integrated with Firebase for user authentication.
+
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/alihassnain-github/nextjs-firebase-authentication.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd nextjs-firebase-authentication
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Configure Firebase:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ - [Create a Firebase project at Firebase Console.](https://console.firebase.google.com/u/0/?_gl=1*1x8275p*_ga*NjE3NjExODM5LjE3Mjg5OTUxMjU.*_ga_CW55HF8NVT*MTczNTY1MTEzNC4zNy4xLjE3MzU2NTEyODAuNjAuMC4w)
+ - Enable Email/Password Authentication and Google Authentication in the Firebase console.
+ - Obtain your Firebase config object and add it to your project in ./utils/firebase/config.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Install dependencies
+```bash
+ npm run dev
+```
+Open your browser at http://localhost:3000 to see the application in action.
+## Technologies Used:
 
-## Deploy on Vercel
+**Next.js:** Framework for server-side rendering and static web applications.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Firebase:** Authentication service to handle user login and registration.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**React:** Frontend library used in this project.
+
+
+## License:
+
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
